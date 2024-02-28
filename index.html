@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Landing Page</title>
+    <title>Windows AI Starts Here</title>
     <style>
         /* Add your CSS styles here */
         body {
@@ -29,17 +29,21 @@
             background-color: rgba(0, 0, 0, 0.5);
             /* Customize overlay styles as needed */
         }
-        .cta-button {
+        .cta-buttons {
             position: absolute;
-            bottom: 20px; /* Adjust the vertical position as needed */
+            bottom: 20px;
             left: 50%;
             transform: translateX(-50%);
-            background-color: #ff6600;
+            display: flex; /* Arrange buttons side by side */
+        }
+        .cta-button {
+            background-color: #0074D9; /* Blue color */
             color: #fff;
             padding: 10px 20px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            margin-right: 10px; /* Add spacing between buttons */
         }
     </style>
 </head>
@@ -47,8 +51,10 @@
     <div class="video-container">
         <video src="https://windows-ai.github.io/547/LandingPageVideo.mp4" type="video/mp4" autoplay muted></video>
         <div class="overlay"></div>
-        <a href="content.html" class="cta-button">Content</a>
-        <a href="https://windows-ai.github.io/547/LandingPageVideo.mp4" class="cta-button">Click Here for Video with Sound</a>
+        <div class="cta-buttons">
+            <a href="content.html" class="cta-button">Content</a>
+            <a href="https://windows-ai.github.io/547/LandingPageVideo.mp4" class="cta-button">Click Here for Video with Sound</a>
+        </div>
     </div>
 </body>
 </html>
